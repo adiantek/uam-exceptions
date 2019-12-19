@@ -10,6 +10,18 @@ public class TestSubject {
 
     }
 
+    @Override
+    public String toString() {
+        return "TestSubject{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    static Builder builder() {
+        return new Builder();
+    }
+
     static class Builder {
 
         private String name;
